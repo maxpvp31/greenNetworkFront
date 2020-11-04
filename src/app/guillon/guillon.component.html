@@ -1,0 +1,21 @@
+<div style="margin: auto;width: 80%;margin-top: 2%;" *ngFor="let item of user"
+  class="card card-custom">
+
+
+    <div class="card-header">
+        <div class="card-title">
+            <h3 class="card-label">Carte d'identité
+            <small>sub title</small></h3>
+        </div>
+    </div>
+    <div class="card-body"> 2emeName : {{item.name}} <br/> Name : {{item.lastname}} <br/> age : {{item.age}}</div>
+</div>
+<button type="button" class="btn btn-primary">ADD</button>
+<input placeholder="lastname" [(ngModel)]="lastnameF"/>
+{{lastnameF}}
+<input placeholder="name" [(ngModel)]="nameF"/>
+{{nameF}}
+<input type="text" placeholder="age" [(ngModel)]="ageF" />
+{{ageF}}
+
+ 

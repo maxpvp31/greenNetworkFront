@@ -5,15 +5,15 @@ import { environment } from '../environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class FeedServices {
 
   constructor(
     private http: HttpClient
   ) { }
 
    
-    getUsers(data){
-      return this.http.post<any>(`${environment.apiUrl}/guillon/get`,data);
+    getFeed(data : any){
+      return this.http.post<any>(`${environment.apiUrl}/histo/get`,data);
     }
 
     
