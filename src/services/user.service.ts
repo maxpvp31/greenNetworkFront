@@ -11,10 +11,10 @@ export class UserService {
     private http: HttpClient
   ) { }
 
-   
+
     getUsers(data){
-      return this.http.post<any>(`${environment.apiUrl}/guillon/get`,data);
+      return this.http.post<any>(`${environment.apiUrl}/vins/deleteUser`,data);
     }
 
-    
+
 }

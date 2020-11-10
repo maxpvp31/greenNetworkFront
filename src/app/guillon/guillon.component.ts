@@ -9,19 +9,15 @@ import { UserService } from 'src/services/user.service';
 export class GuillonComponent implements OnInit {
 
   constructor(
-    private Test : UserService
+    private userServ : UserService
   ) { }
-  a :any
+
 user = []
-ageF = ""
-lastnameF =""
-nameF =""
-test(){
-  this.a="saurin"
-}
+
+
+
   async ngOnInit(){
-    console.log("beforerequest")
-this.user = await this.Test.getUsers({}).toPromise()
-console.log("user",this.user)
+    this.user = await this.userServ.getUsers({id: 1}).toPromise()
+    console.log(this.user)
   }
 }
