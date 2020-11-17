@@ -36,37 +36,33 @@ export class HeaderDesktopComponent implements OnInit {
   }
 
   async ngOnInit() {
-    switch(this.role) {
-      case 'old-student':
-        this.mainNav = this.navBarOldStudent;
-        break;
-    }
+   
   }
 
-  goToSomewhere(path) {
-    console.log(path);
-    switch(path) {
-      case 'Accueil':
-        this.router.navigate(['']);
-        break;
-      case 'Planning':
-        this.router.navigate(['/planning']);
-        break;
-        case 'Tarifs':
-          console.log('price router');
-          this.router.navigate(['/price']);
-          break;
-          case 'Notre offre':
-            this.router.navigate(['']);
-            break;
-            case 'EFFORMIP':
-              this.router.navigate(['']);
-              break;
-      case 'Nous contacter':
-        this.router.navigate(['']);
-        break;
-    }
-  }
+  // goToSomewhere(path) {
+  //   console.log(path);
+  //   switch(path) {
+  //     case 'Accueil':
+  //       this.router.navigate(['']);
+  //       break;
+  //     case 'Planning':
+  //       this.router.navigate(['/planning']);
+  //       break;
+  //       case 'Tarifs':
+  //         console.log('price router');
+  //         this.router.navigate(['/price']);
+  //         break;
+  //         case 'Notre offre':
+  //           this.router.navigate(['']);
+  //           break;
+  //           case 'EFFORMIP':
+  //             this.router.navigate(['']);
+  //             break;
+  //     case 'Nous contacter':
+  //       this.router.navigate(['']);
+  //       break;
+  //   }
+  // }
 
   goToHome() {
     this.router.navigate(['']);

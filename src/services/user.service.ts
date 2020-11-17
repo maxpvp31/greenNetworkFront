@@ -12,9 +12,9 @@ export class UserService {
   ) { }
 
 
-    getUsers(data){
-      return this.http.post<any>(`${environment.apiUrl}/vins/deleteUser`,data);
-    }
+   getWine(data){
+      return this.http.get<any>('https://www.scorebat.com/video-api/v1/', data);
+     }
 
 
 }

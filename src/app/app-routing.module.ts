@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { FeedComponent } from './components/views/feed/feed.component';
+import { HomeComponent } from './components/views/home/home.component';
 
 const routes: Routes = [  
-  { path: '', component: FeedComponent },
+  { path: '', component: HomeComponent  },
 
 // {
 //   path: '**',
