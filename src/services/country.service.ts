@@ -5,7 +5,7 @@ import { environment } from '../environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class UserService {
+export class CountryService {
 
   constructor(
     private http: HttpClient
@@ -13,7 +13,7 @@ export class UserService {
 
 
     getUsers(data){
-      return this.http.post<any>(`${environment.apiUrl}/vins/deleteUser`,data);
+      return this.http.post<any>(`${environment.apiUrl}/cartes/addcarte`,data);
     }
 
 

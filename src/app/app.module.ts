@@ -6,13 +6,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderDesktopComponent } from './components/header-desktop/header-desktop.component';
 import { HeaderMobileComponent } from './components/header-mobile/header-mobile.component';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
-import { PriceColumnComponent } from './components/price-column/price-column.component';
-import { SvgRightComponent } from './components/SVG/svg-right/svg-right.component';
-import { SvgLeftComponent } from './components/SVG/svg-left/svg-left.component';
-import { FeedComponent } from './components/views/feed/feed.component';
-import {  HttpClientModule } from '@angular/common/http';
-import { GuillonComponent } from './guillon/guillon.component';
+
+import {  HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,20 +18,17 @@ import { FormsModule } from '@angular/forms';
     HeaderDesktopComponent,
     HeaderMobileComponent,
 
-    PriceColumnComponent,
-    SvgRightComponent,
-    SvgLeftComponent,
-    FeedComponent,
-    GuillonComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     IvyCarouselModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
