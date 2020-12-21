@@ -13,7 +13,7 @@ export class CountryService {
 
 
     getUsers(data){
-      return this.http.post<any>(`${environment.apiUrl}/cartes/addcarte`,data);
+      return this.http.get<any>("https://restcountries.eu/rest/v2/all");
     }
 
 
