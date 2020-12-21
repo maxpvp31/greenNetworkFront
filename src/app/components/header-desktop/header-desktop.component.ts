@@ -36,11 +36,7 @@ export class HeaderDesktopComponent implements OnInit {
   }
 
   async ngOnInit() {
-    switch(this.role) {
-      case 'old-student':
-        this.mainNav = this.navBarOldStudent;
-        break;
-    }
+
   }
 
   goToSomewhere(path) {

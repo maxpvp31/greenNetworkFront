@@ -1,0 +1,20 @@
+<div class="card-body pt-0">
+    <!--begin::Item-->
+    <div *ngFor="let item of match" class="d-flex align-items-center flex-wrap mb-10">
+       {{item.title}}  
+       {{item.competition.name}}
+        {{item.date | date}}
+        <!--begin::Symbol-->
+        <div class="symbol symbol-50 symbol-light mr-5">
+            <span class="symbol-label">
+                <img src="/metronic/theme/html/demo2/dist/assets/media/svg/misc/006-plurk.svg" class="h-50 align-self-center" alt="">
+            </span>
+        </div>
+        <!--end::Symbol-->
+        <!--begin::Text-->
+        
+        
+    </div>
+    <!--end::Item-->
+    <!--begin::Item-->
+    
