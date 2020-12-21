@@ -10,11 +10,20 @@ export class HomeComponent implements OnInit {
 
   constructor(private country : CountryService) { }
 countryArray = []
-  async ngOnInit() {
 
-    const temp = await this.country.getUsers("dehka").toPromise()
-    this.countryArray = [...temp]
-    console.log(this.countryArray)
+
+filtredArr = []
+ async ngOnInit() {
+  const temp = await this.country.getUsers("dehka").toPromise()
+  this.countryArray = [...temp]
+  this.filtredArr = [...temp]
+  console.log(this.countryArray)
   }
+filterList = ["Asia","Europe","Africa","Polar","Oceania","Americas"]
+
+filtering(continent:string) {
+const result = this.filtredArr.filter(items => items.region===continent)
+console.log(result)
+}
 
 }
