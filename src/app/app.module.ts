@@ -9,6 +9,9 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 import {  HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { DetailsComponent } from './views/details/details.component';
+import { HomeComponent } from './views/home/home.component';
+import { CountryItemComponent } from './components/country-item/country-item.component';
 
 
 @NgModule({
@@ -17,6 +20,9 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     HeaderDesktopComponent,
     HeaderMobileComponent,
+    DetailsComponent,
+    HomeComponent,
+    CountryItemComponent,
 
 
   ],
