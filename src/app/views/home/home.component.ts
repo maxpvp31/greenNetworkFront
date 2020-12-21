@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CountryService } from 'src/services/country.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { CountryService } from 'src/services/country.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private country : CountryService) { }
+  constructor(private country : CountryService,private router : Router) { }
 countryArray = []
 
 
@@ -22,8 +23,15 @@ filtredArr = []
 filterList = ["Asia","Europe","Africa","Polar","Oceania","Americas"]
 
 filtering(continent:string) {
-const result = this.filtredArr.filter(items => items.region===continent)
-console.log(result)
+const result = this.countryArray.filter(items => items.region===continent)
+this.filtredArr = [...result]
+}
+
+detailCountry(country : any){
+
+
+this.router.navigate(['/detail'])
+
 }
 
 }
