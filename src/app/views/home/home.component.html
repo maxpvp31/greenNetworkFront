@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <div class="alert alert-custom alert-white alert-shadow fade show gutter-b" role="alert">
   <div class="alert-icon">
@@ -14,3 +15,21 @@
 
 </ul>
 
+=======
+
+     <div class="alert alert-custom alert-white alert-shadow fade show gutter-b" role="alert">
+        <div class="alert-icon">
+            <span class="svg-icon svg-icon-primary svg-icon-xl">
+             <button (click)="filtering(item)" *ngFor="let item of filterList">{{item}}</button>
+            </span>
+        </div>
+        <div class="alert-text"></div>
+    </div>
+     <ul class="dashboard-tabs nav nav-pills nav-danger row row-paddingless m-0 p-0 flex-column flex-sm-row" role="tablist">
+        <app-country-item [data]="item" *ngFor="let item of filtredArr">
+
+    </app-country-item>
+    </ul>
+
+
+>>>>>>> a4085df6e901bd80fc7a19ad920191730ed7e072

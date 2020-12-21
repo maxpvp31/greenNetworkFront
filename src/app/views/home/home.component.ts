@@ -11,8 +11,6 @@ export class HomeComponent implements OnInit {
 
   constructor(private country : CountryService,private router : Router) { }
 countryArray = []
-
-
 filtredArr = []
  async ngOnInit() {
   const temp = await this.country.getUsers("dehka").toPromise()
